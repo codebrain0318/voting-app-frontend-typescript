@@ -90,7 +90,7 @@ const Home = () => {
         </div>
         {polls.map(poll => (
           <div className='flex flex-col justify-center items-center text-gray-600 w-full cursor-pointer' onClick={() => onPollClick(poll.name)}>
-            <div className='flex flex-col p-2 gap-2 bg-bgColor hover:opacity-80 rounded-md w-full'>
+            <div className={`flex flex-col p-2 gap-2 hover:opacity-80 rounded-md w-full ${poll.name == selectedPoll ? 'bg-transparent border border-blue-400' : 'bg-bgColor'}`}>
               <div className='flex justify-between items-center w-full'>
                 <div className='text-white text-md'>
                   {poll.name}
