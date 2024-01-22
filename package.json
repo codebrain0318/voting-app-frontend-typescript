@@ -12,6 +12,8 @@
   "dependencies": {
     "@fontsource/karla": "^5.0.18",
     "@fontsource/sen": "^5.0.18",
+    "@nextui-org/react": "^2.2.9",
+    "framer-motion": "^10.18.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",

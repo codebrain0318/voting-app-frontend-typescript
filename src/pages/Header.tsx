@@ -24,11 +24,11 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='flex h-24 gap-8 px-8 py-4 border-b border-solid mflex-row border-borderColor'>
+    <div className='flex h-16 gap-6 px-6 py-3 border-b border-solid mflex-row border-borderColor'>
       <div className='hidden md:block md:w-1/3'>
         <SearchBox />
       </div>
-      <div className='flex items-center justify-center w-24 h-full md:border-b md:border-solid md:hidden md:border-borderColor'>
+      <div className='flex items-center justify-center w-16 h-full md:border-b md:border-solid md:hidden md:border-borderColor'>
         <Link className='flex items-center justify-center' to="/">
           <img src={checkLogo} height="60px" alt="Check logo" />
         </Link>
@@ -43,21 +43,21 @@ const Header = () => {
           </div>
         </div>
         <div className='flex items-center justify-end gap-5'>
-          <Link className='items-center justify-center hidden h-16 px-8 py-4 bg-blue-500 rounded-md xl:flex' to="/upgrade">
-            <button className='text-lg text-white font-sen'>Upgrade</button>
+          <Link className='items-center justify-center hidden xl:flex' to="/upgrade">
+            <button className='h-10 px-5 bg-trasparent hover:bg-borderColor border border-borderColor rounded-xl text-lg text-white font-sen'>Upgrade</button>
           </Link>
-          <div className='items-center justify-center hidden h-16 p-4 border border-solid rounded-lg cursor-pointer xl:flex border-borderColor'>
-            <img src={bellLogo} width="24px"  alt="bellLogo" />
+          <div className='items-center justify-center hidden h-10 p-3 border border-solid rounded-lg cursor-pointer xl:flex border-borderColor'>
+            <img src={bellLogo} width="16px"  alt="bellLogo" />
           </div>
-          <div className='flex-shrink-0 hidden h-16 p-4 font-semibold leading-7 text-blue-500 border border-solid rounded-lg cursor-pointer xl:block font-sen font-lg border-borderColor'>
+          <div className='flex-shrink-0 hidden h-10 px-3 p-1 font-semibold leading-7 text-blue-500 border border-solid rounded-lg cursor-pointer xl:block font-sen font-lg border-borderColor'>
             $500.99
           </div>
           <div className='flex items-center gap-3'>
             <Link to="/">
-              <img src={avatarLogo} width="56px"  alt="avatarLogo" />
+              <img src={avatarLogo} width="40px"  alt="avatarLogo" />
             </Link>
             <div className='flex items-center gap-1'>
-              <div className='text-lg font-extrabold leading-8 text-white font-sen'>
+              <div className='text-md font-extrabold leading-8 text-white font-sen'>
                 Masie <span className='font-normal'>
                   Stark
                 </span>

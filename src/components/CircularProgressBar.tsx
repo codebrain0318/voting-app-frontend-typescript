@@ -10,7 +10,7 @@ type CircleProgressBarProps = {
 
 const CircleProgressBar: React.FC<CircleProgressBarProps> = ({ percentage }) => {
   return (
-    <div style={{ width: '64px' }}>
+    <div style={{ width: '40px' }}>
       <CircularProgressbar
         value={Math.floor(Number(percentage)/3)}
         text={String(60-Math.floor(Number(percentage)/5))}

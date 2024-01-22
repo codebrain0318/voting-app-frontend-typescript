@@ -1,6 +1,6 @@
 const SettingButton = () => {
   return (
-    <span className='absolute flex items-center justify-center flex-shrink-0 cursor-pointer stroke-1 top-8 right-8 w-14 h-14 fill-bgColor stoke-opacity-20'>
+    <span className='absolute flex items-center justify-center flex-shrink-0 cursor-pointer stroke-1 top-6 right-6 w-10 h-10 fill-bgColor stoke-opacity-20'>
       <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
         <rect width="56" height="56" fill="#171721"/>
         <rect x="0.5" y="0.5" width="55" height="55" stroke="white" strokeOpacity="0.2"/>
