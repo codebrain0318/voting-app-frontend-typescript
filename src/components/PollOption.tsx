@@ -1,17 +1,18 @@
 import React from 'react';
 
-import PropTypes from 'prop-types'
 import 'react-circular-progressbar/dist/styles.css';
 
 import '@fontsource/karla'
 
 type PollOptionProps = {
   color: string;
-  percentage: number;
+  vote: number;
   option: number;
+  votes: number;
 };
 
-const PollOption: React.FC<PollOptionProps> = ({ color, percentage, option }) => {
+const PollOption: React.FC<PollOptionProps> = ({ color, vote, option, votes }) => {
+  const percentage = votes != 0 ? Math.floor(vote*100/votes) : 0;
   return (
     <div className='relative flex justify-between items-center p-4 gap-4 w-full max-w-[400px] bg-bgColor rounded-lg font-karla'>
       <div className='flex items-center gap-2'>
@@ -21,7 +22,7 @@ const PollOption: React.FC<PollOptionProps> = ({ color, percentage, option }) =>
         </div>
       </div>
       <div className='text-xs text-gray-600'>
-        {percentage} Votes ({percentage}.00%)
+        {vote} Votes ({percentage}.00%)
       </div>
       
       <div className='flex absolute w-full h-full left-0 top-0 rounded-lg opacity-30'>
@@ -31,11 +32,5 @@ const PollOption: React.FC<PollOptionProps> = ({ color, percentage, option }) =>
     </div>
   );
 };
-
-PollOption.propTypes = {
-  color: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
-  option: PropTypes.number.isRequired
-}
 
 export default PollOption;
